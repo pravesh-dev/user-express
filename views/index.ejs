@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 flex justify-center items-center">
+        <form action="/create" method="post" class="w-[25vw] h-[60vh] p-5 flex flex-col gap-4  justify-center bg-zinc-700 relative">
+            <h1 class="mx-auto text-white text-xl font-bold mb-6 uppercase absolute top-4 left-32">Add user</h1>
+            <input class="w-full h-[5vh] pl-3 outline-none border-none bg-zinc-800 rounded-md text-white" type="text" placeholder="Enter your name" name="name" autocomplete="off">
+            <input class="w-full h-[5vh] pl-3 outline-none border-none bg-zinc-800 rounded-md text-white" type="email" placeholder="Enter your email" name="email" autocomplete="off">
+            <input class="w-full h-[5vh] pl-3 outline-none border-none bg-zinc-800 rounded-md text-white" type="text" placeholder="Enter Image url" name="image" autocomplete="off">
+            <div class="flex justify-between items-center">
+                <a href="/read" class="text-sm pl-1 text-cyan-400">View all users</a>
+                <button class="px-8 py-2 self-center rounded-md bg-blue-500 text-white " type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
